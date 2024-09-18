@@ -1,0 +1,79 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000; /* Black background */
+  }
+  
+  .stopwatch-container {
+    background-color: #1c1c1c; /* Dark grey background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Light shadow */
+    text-align: center;
+    color: white; /* White text */
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff; /* White text */
+  }
+  
+  .display-time {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #fff; /* White text for display */
+    width: 200px; /* Set width */
+    height: 200px; /* Set height to make it circular */
+    border-radius: 50%; /* Make it a circle */
+    border: 5px solid darkred; /* Dark red border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the circle */
+    background-color: #1c1c1c; /* Match container background */
+  }
+  
+  .buttons {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1em;
+    background-color: #333; /* Dark button background */
+    color: white; /* White text on buttons */
+    border: 1px solid #444; /* Border for buttons */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #555; /* Lighter grey background on hover */
+  }
+  
+  .laps-container {
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #444; /* Top border for separation */
+    padding-top: 10px;
+  }
+  
+  .laps-container div {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #ddd; /* Light grey color for laps */
+  }
+  
